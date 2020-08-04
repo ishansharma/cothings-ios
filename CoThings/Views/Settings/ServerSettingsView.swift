@@ -20,6 +20,8 @@ struct ServerSettingsView: View {
     
     @State var isScanningQRCode: Bool = false
     @State var showCameraErrorAlert: Bool = false
+	@State var showingPrivacyPolicy: Bool = false
+	@State var askedForReadingPrivacy = false
     
     var isHostnameValid: Bool {
         if serverHostname.starts(with: "https://") {
@@ -37,7 +39,7 @@ struct ServerSettingsView: View {
                         TextField("", text: .constant("https://"))
                             .disabled(true)
                             .fixedSize()
-                        TextField("demo-eu.cothings.app", text: self.$serverHostname)
+                        TextField("demo.cothings.app", text: self.$serverHostname)
                             .keyboardType(.URL)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
@@ -55,7 +57,11 @@ struct ServerSettingsView: View {
                     }
                 }
                 Section {
-                    Button("Done", action: self.save)
+					Button("Done", action: self.save)
+						.disabled(!(self.serverHostname.count > 2 && self.serverHostname.contains(".")))
+					Button("Use Demo Server to see how it's like", action:  {
+						self.serverHostname = "demo.cothings.app"
+					})
                 }
             }
             .sheet(isPresented: $isScanningQRCode) {
@@ -69,6 +75,17 @@ struct ServerSettingsView: View {
                     }
                 )
             }
+			.alert(isPresented: $showingPrivacyPolicy) {
+				Alert(title: Text("Privacy Policy"),
+					  message: Text("Please take a few minutes to read the policy before using the application.\n\n This action will open the privacy policy in your browser for the server: \(self.serverHostname)"),
+					  primaryButton: .default(Text("OK, Let me read it!"), action: {
+						UIApplication.shared.open(URL(string:"https://" +  self.serverHostname + "/privacy")!)
+					}),
+					  secondaryButton: .default(Text("I agree"), action: {
+						self.askedForReadingPrivacy = true
+						self.save()
+					}))
+			}
         }
         .background(colorScheme == .dark ? Color.black : Color(hex: "F5F6F7"))
         .navigationBarTitle("Server Settings", displayMode: .inline)
@@ -83,6 +100,15 @@ struct ServerSettingsView: View {
     }
     
     private func save() {
+		if !isHostnameValid {
+			return
+		}
+
+		if !askedForReadingPrivacy {
+			showingPrivacyPolicy = true
+			return
+		}
+
         stateController.saveConfiguration(hostname: serverHostname)
         presentationMode.wrappedValue.dismiss()
     }

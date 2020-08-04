@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48154916248510330045E41F /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48154915248510330045E41F /* APIRequest.swift */; };
 		48241B6D246BAB2400EDAE16 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48241B6C246BAB2400EDAE16 /* AppState.swift */; };
 		48241B6F246BBE8D00EDAE16 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48241B6E246BBE8D00EDAE16 /* RootView.swift */; };
 		48241B71246BC94200EDAE16 /* BeaconDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48241B70246BC94200EDAE16 /* BeaconDebugView.swift */; };
+		482566E124910E34004E5442 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 482566E024910E34004E5442 /* SDWebImageSwiftUI */; };
 		48397BB724827BF600A697C4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48397BB624827BF600A697C4 /* NotificationService.swift */; };
 		48397BB924827C5D00A697C4 /* NotificationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48397BB824827C5D00A697C4 /* NotificationSettings.swift */; };
 		487C3005248100310085B94F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487C3004248100310085B94F /* AboutView.swift */; };
@@ -21,17 +23,10 @@
 		48DDD7C5245C5CD300A249BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDD7C4245C5CD300A249BD /* SceneDelegate.swift */; };
 		48DDD7CC245C5CD500A249BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7CB245C5CD500A249BD /* Assets.xcassets */; };
 		48DDD7CF245C5CD500A249BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7CD245C5CD500A249BD /* LaunchScreen.storyboard */; };
-		48DDD7D4245C5CD500A249BD /* CoThings WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 48DDD7D3245C5CD500A249BD /* CoThings WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		48DDD7DA245C5CD500A249BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7D8245C5CD500A249BD /* Interface.storyboard */; };
-		48DDD7DC245C5CD500A249BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7DB245C5CD500A249BD /* Assets.xcassets */; };
-		48DDD7E3245C5CD600A249BD /* CoThings WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48DDD7E2245C5CD600A249BD /* CoThings WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		48DDD7E8245C5CD600A249BD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDD7E7245C5CD600A249BD /* InterfaceController.swift */; };
-		48DDD7EA245C5CD600A249BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDD7E9245C5CD600A249BD /* ExtensionDelegate.swift */; };
-		48DDD7EC245C5CD600A249BD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDD7EB245C5CD600A249BD /* NotificationController.swift */; };
-		48DDD7EE245C5CD600A249BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7ED245C5CD600A249BD /* Assets.xcassets */; };
 		48DDD800245C76F400A249BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7FE245C76F400A249BD /* README.md */; };
 		48DDD801245C76F400A249BD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 48DDD7FF245C76F400A249BD /* LICENSE */; };
 		6633A62524858E8A0010C340 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6633A62424858E8A0010C340 /* QRCodeView.swift */; };
+		691DF0192496006400B2E624 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691DF0182496006400B2E624 /* LoadingView.swift */; };
 		A9176B76246ED95C00027D6C /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9176B75246ED95C00027D6C /* OnBoardingScreen.swift */; };
 		A9176B78246EDA5300027D6C /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9176B77246EDA5300027D6C /* StateController.swift */; };
 		A9176B7C246EED7100027D6C /* RoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9176B7B246EED7100027D6C /* RoomsController.swift */; };
@@ -62,42 +57,13 @@
 		A9F301D42475710400CCA27E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F301D32475710400CCA27E /* Session.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		48DDD7D5245C5CD500A249BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48DDD7B7245C5CD300A249BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48DDD7D2245C5CD500A249BD;
-			remoteInfo = "CoThings WatchKit App";
-		};
-		48DDD7E4245C5CD600A249BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48DDD7B7245C5CD300A249BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48DDD7E1245C5CD600A249BD;
-			remoteInfo = "CoThings WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		48DDD7F6245C5CD600A249BD /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				48DDD7E3245C5CD600A249BD /* CoThings WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		48DDD7FA245C5CD600A249BD /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				48DDD7D4245C5CD500A249BD /* CoThings WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		480CC117247B67F9000B2D7E /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		48154915248510330045E41F /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		48241B6C246BAB2400EDAE16 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		48241B6E246BBE8D00EDAE16 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		48241B70246BC94200EDAE16 /* BeaconDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDebugView.swift; sourceTree = "<group>"; };
@@ -122,11 +89,9 @@
 		48DDD7CB245C5CD500A249BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DDD7CE245C5CD500A249BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48DDD7D0245C5CD500A249BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48DDD7D3245C5CD500A249BD /* CoThings WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoThings WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DDD7D9245C5CD500A249BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		48DDD7DB245C5CD500A249BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48DDD7DD245C5CD500A249BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48DDD7E2245C5CD600A249BD /* CoThings WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoThings WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48DDD7E7245C5CD600A249BD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		48DDD7E9245C5CD600A249BD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		48DDD7EB245C5CD600A249BD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -137,6 +102,7 @@
 		48DDD7FF245C76F400A249BD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		48F52925247B9070004AEAA2 /* CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONDUCT.md; sourceTree = "<group>"; };
 		6633A62424858E8A0010C340 /* QRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		691DF0182496006400B2E624 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A9176B75246ED95C00027D6C /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
 		A9176B77246EDA5300027D6C /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		A9176B7B246EED7100027D6C /* RoomsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsController.swift; sourceTree = "<group>"; };
@@ -171,15 +137,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482566E124910E34004E5442 /* SDWebImageSwiftUI in Frameworks */,
 				A96ECFE0246C602100F2D55C /* DateHelper in Frameworks */,
 				48ADEE9F245D6A7B00265BB2 /* SwiftPhoenixClient in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48DDD7DF245C5CD600A249BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				48DDD7BF245C5CD300A249BD /* CoThings.app */,
-				48DDD7D3245C5CD500A249BD /* CoThings WatchKit App.app */,
-				48DDD7E2245C5CD600A249BD /* CoThings WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +282,7 @@
 				A96ECFC6246C5B3200F2D55C /* PlaceSession.swift */,
 				A96ECFC7246C5B3200F2D55C /* ServerBackend.swift */,
 				A9176B7D246F3CF700027D6C /* CoThingsBackend.swift */,
+				48154915248510330045E41F /* APIRequest.swift */,
 				48397BB624827BF600A697C4 /* NotificationService.swift */,
 			);
 			path = Services;
@@ -356,6 +315,7 @@
 				A96ECFE2246C605C00F2D55C /* Date+Ago.swift */,
 				A96ECFE3246C605C00F2D55C /* UIKit+Mix.swift */,
 				48AA3055246EA28500F7F9BA /* DateFormatter+Custom.swift */,
+				691DF0182496006400B2E624 /* LoadingView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -382,54 +342,21 @@
 				48DDD7BC245C5CD300A249BD /* Frameworks */,
 				48DDD7BD245C5CD300A249BD /* Resources */,
 				48DDD7FA245C5CD600A249BD /* Embed Watch Content */,
+				48B5556C2497974800780337 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				48DDD7D6245C5CD500A249BD /* PBXTargetDependency */,
 			);
 			name = CoThings;
 			packageProductDependencies = (
 				48ADEE9E245D6A7B00265BB2 /* SwiftPhoenixClient */,
 				A96ECFDF246C602100F2D55C /* DateHelper */,
+				482566E024910E34004E5442 /* SDWebImageSwiftUI */,
 			);
 			productName = CoThings;
 			productReference = 48DDD7BF245C5CD300A249BD /* CoThings.app */;
 			productType = "com.apple.product-type.application";
-		};
-		48DDD7D2245C5CD500A249BD /* CoThings WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48DDD7F7245C5CD600A249BD /* Build configuration list for PBXNativeTarget "CoThings WatchKit App" */;
-			buildPhases = (
-				48DDD7D1245C5CD500A249BD /* Resources */,
-				48DDD7F6245C5CD600A249BD /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				48DDD7E5245C5CD600A249BD /* PBXTargetDependency */,
-			);
-			name = "CoThings WatchKit App";
-			productName = "CoThings WatchKit App";
-			productReference = 48DDD7D3245C5CD500A249BD /* CoThings WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		48DDD7E1245C5CD600A249BD /* CoThings WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48DDD7F3245C5CD600A249BD /* Build configuration list for PBXNativeTarget "CoThings WatchKit Extension" */;
-			buildPhases = (
-				48DDD7DE245C5CD600A249BD /* Sources */,
-				48DDD7DF245C5CD600A249BD /* Frameworks */,
-				48DDD7E0245C5CD600A249BD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CoThings WatchKit Extension";
-			productName = "CoThings WatchKit Extension";
-			productReference = 48DDD7E2245C5CD600A249BD /* CoThings WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -442,12 +369,6 @@
 				ORGANIZATIONNAME = Rainlab;
 				TargetAttributes = {
 					48DDD7BE245C5CD300A249BD = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
-					48DDD7D2245C5CD500A249BD = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
-					48DDD7E1245C5CD600A249BD = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -464,14 +385,14 @@
 			packageReferences = (
 				48ADEE9D245D6A7B00265BB2 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */,
 				A96ECFDE246C602100F2D55C /* XCRemoteSwiftPackageReference "DateHelper" */,
+				482566DC24910DAE004E5442 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				482566DF24910E34004E5442 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 48DDD7C0245C5CD300A249BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				48DDD7BE245C5CD300A249BD /* CoThings */,
-				48DDD7D2245C5CD500A249BD /* CoThings WatchKit App */,
-				48DDD7E1245C5CD600A249BD /* CoThings WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -489,24 +410,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48DDD7D1245C5CD500A249BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48DDD7DC245C5CD500A249BD /* Assets.xcassets in Resources */,
-				48DDD7DA245C5CD500A249BD /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48DDD7E0245C5CD600A249BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48DDD7EE245C5CD600A249BD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48B5556C2497974800780337 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(date -u \"+%Y%m%d%H%M\")\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48DDD7BB245C5CD300A249BD /* Sources */ = {
@@ -526,6 +450,7 @@
 				A94042AB247585E8003C26D2 /* SettingsScreen.swift in Sources */,
 				48397BB924827C5D00A697C4 /* NotificationSettings.swift in Sources */,
 				A96ECFD5246C5F9B00F2D55C /* Environment.swift in Sources */,
+				691DF0192496006400B2E624 /* LoadingView.swift in Sources */,
 				48241B6F246BBE8D00EDAE16 /* RootView.swift in Sources */,
 				6633A62524858E8A0010C340 /* QRCodeView.swift in Sources */,
 				A96ECFE7246C605C00F2D55C /* Color+Utils.swift in Sources */,
@@ -550,34 +475,12 @@
 				48DDD7C5245C5CD300A249BD /* SceneDelegate.swift in Sources */,
 				A96ECFCF246C5F0E00F2D55C /* RoomsScreen.swift in Sources */,
 				A96ECFCA246C5B3200F2D55C /* ServerBackend.swift in Sources */,
+				48154916248510330045E41F /* APIRequest.swift in Sources */,
 				A96ECFD4246C5F9B00F2D55C /* EdgeBorderModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48DDD7DE245C5CD600A249BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48DDD7EC245C5CD600A249BD /* NotificationController.swift in Sources */,
-				48DDD7EA245C5CD600A249BD /* ExtensionDelegate.swift in Sources */,
-				48DDD7E8245C5CD600A249BD /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		48DDD7D6245C5CD500A249BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48DDD7D2245C5CD500A249BD /* CoThings WatchKit App */;
-			targetProxy = 48DDD7D5245C5CD500A249BD /* PBXContainerItemProxy */;
-		};
-		48DDD7E5245C5CD600A249BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48DDD7E1245C5CD600A249BD /* CoThings WatchKit Extension */;
-			targetProxy = 48DDD7E4245C5CD600A249BD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		48DDD7CD245C5CD500A249BD /* LaunchScreen.storyboard */ = {
@@ -713,96 +616,6 @@
 			};
 			name = Release;
 		};
-		48DDD7F4245C5CD600A249BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
-				INFOPLIST_FILE = "CoThings WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Debug;
-		};
-		48DDD7F5245C5CD600A249BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
-				INFOPLIST_FILE = "CoThings WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Release;
-		};
-		48DDD7F8245C5CD600A249BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
-				IBSC_MODULE = CoThings_WatchKit_Extension;
-				INFOPLIST_FILE = "CoThings WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Debug;
-		};
-		48DDD7F9245C5CD600A249BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
-				IBSC_MODULE = CoThings_WatchKit_Extension;
-				INFOPLIST_FILE = "CoThings WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Release;
-		};
 		48DDD7FC245C5CD600A249BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -810,7 +623,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
+				DEVELOPMENT_TEAM = NTTQ85TG33;
 				INFOPLIST_FILE = CoThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -818,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -833,7 +646,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20200529;
-				DEVELOPMENT_TEAM = 35HZ3WVY79;
+				DEVELOPMENT_TEAM = NTTQ85TG33;
 				INFOPLIST_FILE = CoThings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -841,7 +654,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = app.cothings.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -861,24 +674,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48DDD7F3245C5CD600A249BD /* Build configuration list for PBXNativeTarget "CoThings WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48DDD7F4245C5CD600A249BD /* Debug */,
-				48DDD7F5245C5CD600A249BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48DDD7F7245C5CD600A249BD /* Build configuration list for PBXNativeTarget "CoThings WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48DDD7F8245C5CD600A249BD /* Debug */,
-				48DDD7F9245C5CD600A249BD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		48DDD7FB245C5CD600A249BD /* Build configuration list for PBXNativeTarget "CoThings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -891,6 +686,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		482566DC24910DAE004E5442 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+		482566DF24910E34004E5442 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		48ADEE9D245D6A7B00265BB2 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/davidstump/SwiftPhoenixClient.git";
@@ -910,6 +721,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		482566E024910E34004E5442 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 482566DF24910E34004E5442 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		48ADEE9E245D6A7B00265BB2 /* SwiftPhoenixClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 48ADEE9D245D6A7B00265BB2 /* XCRemoteSwiftPackageReference "SwiftPhoenixClient" */;

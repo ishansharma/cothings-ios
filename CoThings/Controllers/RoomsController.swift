@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class RoomsController: ObservableObject {
+class RoomsController: ObservableObject, APIRequestDelegate {
     let session: PlaceSession
     
     @Published var rooms: [String: [Room]] = [:]
@@ -17,10 +17,12 @@ class RoomsController: ObservableObject {
     @Published var groupPopulations: [String: Int] = [:]
     
     private var roomsSubscription: AnyCancellable!
-        
+
+	var appConfig = AppConfig(title: "CoThings",  imageUrl: "")
+
     init(session: PlaceSession) {
         self.session = session
-        
+
         roomsSubscription = session.$rooms
             .sink { rooms in
                 let sortedRooms = rooms.sorted {$0.name < $1.name}
@@ -36,5 +38,18 @@ class RoomsController: ObservableObject {
                 
                 self.groupPopulations = groupPopulations
             }
+
+		getAppConfig()
     }
+
+	func getAppConfig() {
+		APIRequest<AppConfig>.get(self, relativeUrl: "config.json", jsonKey: "app", success: { config in
+			self.appConfig = config
+		})
+	}
+
+	func onError(_ message: String) {
+		print("API Request got error: " + message)
+	}
+
 }
